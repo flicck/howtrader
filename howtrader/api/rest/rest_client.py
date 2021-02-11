@@ -258,8 +258,7 @@ class RestClient(object):
                 url,
                 headers=request.headers,
                 params=request.params,
-                data=request.data,
-                proxies=self.proxies,
+                data=request.data
             )
             request.response = response
             status_code = response.status_code
