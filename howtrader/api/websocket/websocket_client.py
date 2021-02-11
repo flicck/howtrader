@@ -165,8 +165,8 @@ class WebsocketClient:
                 self._ws = self._create_connection(
                     self.host,
                     sslopt={"cert_reqs": ssl.CERT_NONE},
-                    http_proxy_host=self.proxy_host,
-                    http_proxy_port=self.proxy_port,
+                    # http_proxy_host=self.proxy_host,
+                    # http_proxy_port=self.proxy_port,
                     header=self.header
                 )
                 triggered = True
